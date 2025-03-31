@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4~5 progress</title>
+    <style>
+        table, tr, td, th{
+            border: 1px, solid, black;
+        }
+
+        td{
+            text-align: center;
+        }
+        #form1, #form2{
+            margin-bottom: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>臺北市立第一女子高級中學學期課表</h1>
+    <h2>112學年度第一學期課程表</h2>
+    <table>
+        <tr>
+            <th>一</th>
+            <th>二</th>
+            <th>三</th>
+            <th>四</th>
+            <th>五</th>
+        </tr>
+
+        <tr>
+            <td>英文</td>
+            <td>國文</td>
+            <td>跑班選修</td>
+            <td>閱讀表達</td>
+            <td>選修物理</td>
+        </tr>
+
+        <tr>
+            <td>體育</td>
+            <td>英文</td>
+            <td>跑班選修</td>
+            <td>閱讀表達</td>
+            <td>選修物理</td>
+        </tr>
+
+        <tr>
+            <td>自然探究</td>
+            <td>選修化學</td>
+            <td>音樂</td>
+            <td>國文</td>
+            <td>英文</td>
+        </tr>
+
+        <tr>
+            <td>自然探究</td>
+            <td>選修化學</td>
+            <td>數學A</td>
+            <td>體育</td>
+            <td>本土語文</td>
+        </tr>
+
+        <tr>
+            <td>化學充實</td>
+            <td>數學A</td>
+            <td>地理</td>
+            <td>美術</td>
+            <td>彈性學習</td>
+        </tr>
+
+        <tr>
+            <td>數學A</td>
+            <td>公民社會</td>
+            <td>國文</td>
+            <td>地理</td>
+            <td>團體活動</td>
+        </tr>
+
+        <tr>
+            <td>數學A</td>
+            <td>公民社會</td>
+            <td>國文</td>
+            <td>英文</td>
+            <td>團體活動</td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+            <td>物理課輔</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+    <br><br><br>
+
+    <form action="" id="form1">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="text" id="password"> 
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br><br>
+
+    <form action="" id="form2">
+        <label for="date">Please choose a date!</label>
+        <input type="date" name="Date" id="date">
+        <br>
+        <label for="last">It would last for </label>
+        <input type="number" name="last" id="last" max="10" min="1">
+        <label for="last"> days.</label>
+    </form>
+    <br><br><br>
+
+    <label for="trip">I would like to visit</label>
+    <select name="" id="trip">
+        <option value="Tokyo">Tokyo</option>
+        <option value="Paris">Paris</option>
+        <option value="New York">New York</option>
+        <option value="Tainan">Tainan</option>
+        <option value="Ankara">Ankara</option>
+        <option value="Budapest">Budapest</option>
+    </select>
+    <br><br><br>
+
+    <label for="">
+        Do you agree with the candidate's statement?
+        <br>
+        <input type="radio" name="q1" id="" value="yes">
+        <label for="">Yes</label>
+        
+        <input type="radio" name="q1" id="" value="no">
+        <label for="">No</label>
+        <br>
+
+        Are you for or against the proposal?
+        <br>
+        <input type="radio" name="q2" id="" value="for">
+        <label for="">For</label>
+        
+        <input type="radio" name="q2" id="" value="against">
+        <label for="">Against</label>
+        <br>
+        
+    </label>
+    <br><br><br>
+
+
+    <form action="">
+        <label for="">How do you go to school?</label>
+        <br>
+        <label for="ans1">By bike</label>
+        <input type="checkbox" name="q3" id="ans1">
+        <br>
+        <label for="ans2">By car</label>
+        <input type="checkbox" name="q3" id="ans2">
+        <br>
+        <label for="ans3">By motorcycle</label>
+        <input type="checkbox" name="q3" id="ans3">
+        <br>
+        <label for="ans4">By MRT</label>
+        <input type="checkbox" name="q3" id="ans4">
+        <br>
+        <label for="ans5">On foot</label>
+        <input type="checkbox" name="q3" id="ans5">
+        <br>
+        <label for="ans6">By bus</label>
+        <input type="checkbox" name="q3" id="ans6">
+        <br>
+    </form>
+    <br><br><br>
+
+    <label for="feedback">Please give us some feedback!</label>
+    <br>
+    <textarea name="feedback" id="feedback"></textarea>
+
+    <br><br><br><br><br>
+
+</body>
+</html>
