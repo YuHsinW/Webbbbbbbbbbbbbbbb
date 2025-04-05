@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ten Most Significant World Events in 2023</title>
     <!-- font-family: "Lyon Text Web", serif; -->
     <style>
-        h1, p{
-            .playfair-display-<uniquifier> {
+        body{
             font-family: "Playfair Display", serif;
-            font-optical-sizing: auto;
-            font-weight: <weight>;
-            font-style: normal;
-            }
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-container{
+            padding: 8em;
         }
 
         img{
             float: right;
+            margin-right: 0;
+            /* display: flex; */
+            padding: 6em 6em 1em 6em;
+        }
+
+        .text-container{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5%;
+        }
+        
+        .content{
+            display: flex;
+            max-width: 60%;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+
+        .small-word{
+            display: inline-block;
+            font-size: small;
+            margin-top: -10em;
+        }
+
+        a{
+            color: orange;
+        }
+
+        a:hover{
+            color: orangered;
         }
         
     </style>
@@ -27,19 +58,27 @@
 </head>
 <body>
 
-    <div style="background-color: rgb(231, 231, 231);">
-        <div style="width: 300px;" >
-        <h1>Ten Most Significant World Events in 2023</h1>
+    <div class="text-container" style="background-color: rgb(231, 231, 231);">
+        <div class="header-container" style="width: 600px;" >
+        <h1 style="font-size: 250%;">Ten Most Significant World Events in 2023</h1>
         <h6>As 2023 comes to a close, here are the top ten most notable world events of the year.</h6>
         </div>
+        <div style="text-align: center;">
         <img width="600px" src="https://cdn.cfr.org/sites/default/files/styles/slide_3_2/public/image/2023/12/NY%20Haze1.webp" alt="">
+        
+        <p class="small-word">The Statue of Liberty hidden behind smoke from Canadian wildfires on June 30, 2023. Brendan McDermid/Reuters</p>
+        </div>
     </div>
     
     <!-- <img width="600px" src="https://cdn.cfr.org/sites/default/files/styles/slide_3_2/public/image/2023/12/NY%20Haze1.webp" alt=""> -->
 
+    <div class="content">
     <p style="margin: auto;">
         You are not alone if 2023 has you feeling worn down. It has been a trying year on the world scene, as the forces of disarray grew stronger. Ongoing wars ground on, while new ones erupted. Geopolitical competition increased, to the point where a meeting between rival heads of state became front-page news even though their talks yielded little tangible progress. In all, good news has been in short supply. So here are my top ten world events in 2023. You may want to read what follows closely. Many of these stories will continue into 2024 and beyond.
+        <br><br><br>
+        And if you would like visuals to go along with the list, here is the <a href="https://www.youtube.com/watch?v=v7XWcXcI0Sc">companion video </a>my colleagues in CFR Digital have created recounting all ten events.
     </p>
+    </div>
 
 </body>
 </html>
