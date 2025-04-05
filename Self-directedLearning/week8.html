@@ -15,16 +15,15 @@
             padding: 0;
         }
 
-        .header-container{
-            padding: 8em;
+        .head-container{
+            padding: 4em;
         }
 
-        img{
+        /* img{
             float: right;
-            margin-right: 0;
-            /* display: flex; */
-            padding: 6em 6em 1em 6em;
-        }
+            margin-right: 0; 
+            padding: 6em 4em 1em 6em;
+        } */
 
         .text-container{
             display: flex;
@@ -39,31 +38,77 @@
             margin-bottom: 100px;
         }
 
-        .small-word{
-            display: inline-block;
-            font-size: small;
-            margin-top: -10em;
+        .image-container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 6em 4em 1em 6em;
         }
+
+        .small-word {
+            font-size: 11px;
+            margin-top: 0.5em; /* 視情況微調 */
+            text-align: center;
+            max-width: 600px;
+        }
+
 
         a{
             color: orange;
+            text-decoration: none;
         }
 
         a:hover{
             color: orangered;
         }
         
+        .header-container{
+            display: flex;
+            margin: 20px auto;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            /* color: black; */
+        }
+
+        .header-container>a{
+            text-decoration: none;
+            color: black;
+            /* color: aqua; */
+        }
+
+        p::selection{
+            background-color: rgb(255, 218, 205);
+        }
+
     </style>
 
 </head>
 <body>
 
-    <div class="text-container" style="background-color: rgb(231, 231, 231);">
-        <div class="header-container" style="width: 600px;" >
-        <h1 style="font-size: 250%;">Ten Most Significant World Events in 2023</h1>
-        <h6>As 2023 comes to a close, here are the top ten most notable world events of the year.</h6>
+    <header>
+        <div class="header-container">
+            <a href="">Experts</a>
+            <a href="">Securing Ukraine</a>
+            <a href="">Topics</a>
+            <a href="">Regions</a>
+            <a href="">Explainers</a>
+            <a href="">Research & Analysis</a>
+            <a href="">Communities</a>
+            <a href="">Events</a>
+
         </div>
-        <div style="text-align: center;">
+    </header>
+
+    <div class="text-container" style="background-color: rgb(231, 231, 231);">
+        <div class="head-container" style="width: 600px;" >
+        <h3>from <b style="color: rgb(236, 127, 2);">The Water's Edge</b></h3>
+        <h1 style="font-size: 200%;">Ten Most Significant World Events in 2023</h1>
+        <h6 style="color: gray;">As 2023 comes to a close, here are the top ten most notable world events of the year.</h6>
+        <p style="color: rgb(4, 4, 82);">Posted <i>by</i> James M. Lindsay</p>
+        <i>December 8, 2023 9:21 am (EST)</i>
+        </div>
+
+        <div class="image-container">
         <img width="600px" src="https://cdn.cfr.org/sites/default/files/styles/slide_3_2/public/image/2023/12/NY%20Haze1.webp" alt="">
         
         <p class="small-word">The Statue of Liberty hidden behind smoke from Canadian wildfires on June 30, 2023. Brendan McDermid/Reuters</p>
