@@ -1,0 +1,62 @@
+
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    line-height: 2;
+  }
+  
+  .googlemap {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    gap: 3em;               
+    margin: 2em 0;
+  }
+  
+    .basic-info {
+    background-color: bisque;
+    padding: 2em;
+    text-align: center;       
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  } 
+
+  .health-info{
+
+  }
+
+
+  .row-container {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    gap: 3em;                  
+    margin: 2em 0;             
+    flex-wrap: wrap; 
+  }
+  
+  
+  .googlemap iframe {
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.health-info{
+    background-color: rgb(184, 228, 255);
+    padding: 2em;
+    
+    text-align: center;       
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.health-info>h2, .basic-info>h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  

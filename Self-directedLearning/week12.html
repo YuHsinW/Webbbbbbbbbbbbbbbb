@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 progress</title>
+    <link rel="stylesheet" href="./week12.css">
+</head>
+<body>
+    <div class="googlemap">
+        <div class="row-container">
+            <div class="basic-info">
+                <h2>Basic information</h2>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Name">
+                <br>
+                <label for="yearold">Birthday</label>
+                <input type="date" name="" id="yearold">
+                <br>
+                <label for="gender">
+                    Gender
+                    <input type="radio" name="q1" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="q1" id="female">
+                    <label for="female">Female</label>
+                    <!-- <input type="radio" name="q1" id="Other">
+                    <label for="Other">Other</label> -->
+                </label>
+                <br>
+                <label for="height">Height</label>
+                <input type="number" name="" id="height" max="250" min="80">
+                <label for="height">cm</label>
+                <br>
+                <label for="weight">Weight</label>
+                <input type="number" name="" id="weight" max="200" min="25">
+                <label for="weight">kg</label>
+            </div>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14449.403026995236!2d121.51377016920273!3d25.123829773192885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6Yar6Zmi!5e0!3m2!1szh-TW!2stw!4v1743945276951!5m2!1szh-TW!2stw" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="row-container">
+        <div class="health-info">
+            <h2>Health data</h2>
+
+            <label for="blood-pressure1">Systolic blood pressure</label>
+            <input type="number" name="" id="blood-pressure1" max="200" min="50">
+            <label for="blood-pressure1">mmHg</label>
+            <br>
+
+            <label for="blood-pressure2">Diastolic blood pressure</label>
+            <input type="number" name="" id="blood-pressure2" max="200" min="50">
+            <label for="blood-pressure2">mmHg</label>
+            <br>
+
+            <label for="heartbeat">Heartbeat</label>
+            <input type="number" name="" id="heartbeat" max="200" min="40">
+            <label for="heartbeat">bpm</label>
+            <br>
+
+            <label for="o2">Oxygen saturation</label>
+            <input type="number" name="" id="o2" max="100" min="0">
+            <label for="o2">%</label>
+            <br>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="done">
+        <button>submit</button>
+    </div>
+
+
+    <div class="result">
+        <h2>Result</h2>
+
+    </div>
+
+    <div class="chart-container">
+        <h4>The following shows the visualization of your health condition</h4>
+    </div>
+
+
+    <iframe src="./week1~3.html" frameborder="0"></iframe>
+
+    <!-- <div class="result">
+        <h2>Result</h2>
+        <p id="bmi-result"></p>
+        <p id="bp-category"></p>
+        <p id="health-suggestion"></p>
+    </div>
+
+    <div class="chart-container">
+        <h2>Visualization</h2>
+        <canvas id="bpChart" width="400" height="200"></canvas>
+        <canvas id="bmiChart" width="400" height="200"></canvas>
+    </div> -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./week12.js"></script> -->
+</body>
+</html>
