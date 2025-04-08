@@ -1,0 +1,110 @@
+:root {
+    --primary: #7cc1b1;
+    --secondary: #b8e4ff;
+    --light: #fffdf8;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Noto Sans TC', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .row-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+    margin: 2em auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 1em;
+  }
+  
+  .card {
+    background-color: var(--light);
+    padding: 1.5em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+    max-width: 90vw;
+    box-sizing: border-box;
+  }
+  
+  iframe.card,
+  img.card {
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+    width: 80%;
+    padding: 0.4em;
+    margin: 0.4em 0;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 5px rgba(124, 193, 177, 0.5);
+  }
+  
+  button {
+    background-color: var(--primary);
+    color: white;
+    height: 50px;
+    width: 120px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 2em;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5aa89a;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  
+  .done {
+    text-align: center;
+    margin: 2em 0;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  /* 響應式設計 */
+  @media (max-width: 768px) {
+    .row-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  
+    iframe {
+      height: 300px;
+    }
+  }
+  

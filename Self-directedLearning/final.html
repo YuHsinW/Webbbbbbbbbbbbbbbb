@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 12 progress</title>
+  <link rel="stylesheet" href="./week12.css" />
+</head>
+<body>
+
+  <div class="row-container">
+    <iframe class="card" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14459.369106386343!2d121.50826533934402!3d25.039426121414788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6Yar6Zmi!5e0!3m2!1szh-TW!2stw!4v1744027105082!5m2!1szh-TW!2stw" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="basic-info card">
+      <h2>Basic Information</h2>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Name" /><br />
+      <label for="yearold">Birthday</label>
+      <input type="date" id="yearold" /><br />
+      <label>Gender</label>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label><br />
+      <label for="height">Height</label>
+      <input type="number" id="height" max="250" min="80" /> cm<br />
+      <label for="weight">Weight</label>
+      <input type="number" id="weight" max="200" min="25" /> kg
+    </div>
+
+    <img class="card" src="https://uklifeinsurancequotes.co.uk/wp-content/uploads/2022/04/risks-of-high-blood-pressure.jpg" alt="Blood Pressure Info" />
+  </div>
+
+  <div class="row-container">
+    <img class="card" src="https://assets.yourpractice.online/2288/client-images/bmi-1.jpg" alt="BMI Chart" />
+
+    <div class="health-info card">
+      <h2>Health Data</h2>
+      <label for="blood-pressure1">Systolic BP</label>
+      <input type="number" id="blood-pressure1" max="200" min="50" /> mmHg<br />
+      <label for="blood-pressure2">Diastolic BP</label>
+      <input type="number" id="blood-pressure2" max="200" min="50" /> mmHg<br />
+      <label for="heartbeat">Heartbeat</label>
+      <input type="number" id="heartbeat" max="200" min="40" /> bpm<br />
+      <label for="o2">Oxygen Saturation</label>
+      <input type="number" id="o2" max="100" min="0" /> %
+    </div>
+
+    <img class="card" src="https://irp.cdn-website.com/18244cdb/dms3rep/multi/blood-oxygen-saturation-scale.gif" alt="O2 Scale" />
+  </div>
+
+  <div class="done">
+    <button>Submit</button>
+  </div>
+
+  <div class="result">
+    <h2>Result</h2>
+  </div>
+
+  <div class="chart-container">
+    <h4>The following shows the visualization of your health condition</h4>
+  </div>
+</body>
+</html>
