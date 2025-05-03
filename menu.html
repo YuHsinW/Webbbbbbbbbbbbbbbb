@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>大小熱菜單</title>
+    <style>
+        body {
+            font-family: "Helvetica Neue", sans-serif;
+            background-color: #f9f9f9;
+            margin: 40px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buttons {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #e0f7fa;
+            border: 1px solid #00796b;
+            color: #00796b;
+            border-radius: 5px;
+        }
+        .menu-section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        .menu-title {
+            font-size: 24px;
+            color: #005f73;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        th {
+            background-color: #e0f7fa;
+            color: #00796b;
+        }
+    </style>
+    <script>
+        function showMenu(category) {
+            document.getElementById("大熱").classList.remove("active");
+            document.getElementById("小熱").classList.remove("active");
+            document.getElementById(category).classList.add("active");
+        }
+    </script>
+</head>
+<body>
+    <h1>大小熱菜單</h1>
+    <div class="buttons">
+        <button onclick="showMenu('大熱')">大熱菜單</button>
+        <button onclick="showMenu('小熱')">小熱菜單</button>
+    </div>
+    <div class="menu-section" id="大熱"><div class="menu-title">大熱菜單</div><table><tr><th>類別</th><th>品項</th><th>價格</th></tr><tr><td>薯餅</td><td>薯餅*1</td><td>17</td></tr><tr><td>吐司-厚片</td><td>花生厚片</td><td>22</td></tr><tr><td>吐司-厚片</td><td>香蒜厚片</td><td>22</td></tr><tr><td>吐司-厚片</td><td>奶酥厚片</td><td>22</td></tr><tr><td>吐司-厚片</td><td>草莓果醬厚片</td><td>22</td></tr><tr><td>吐司-厚片</td><td>巧克力厚片</td><td>22</td></tr><tr><td>吐司-厚片</td><td>葡萄奶酥厚片</td><td>22</td></tr><tr><td>漢堡</td><td>燻雞培根漢堡</td><td>44</td></tr><tr><td>蘿蔔糕</td><td>蘿蔔糕*1</td><td>17</td></tr><tr><td>三明治</td><td>果醬三明治</td><td>22</td></tr><tr><td>三明治</td><td>雞蛋三明治</td><td>27</td></tr><tr><td>三明治</td><td>豬排三明治</td><td>33</td></tr><tr><td>三明治</td><td>燻雞三明治</td><td>33</td></tr><tr><td>三明治</td><td>蝦堡三明治</td><td>33</td></tr><tr><td>三明治</td><td>雞堡三明治</td><td>33</td></tr><tr><td>三明治</td><td>火腿三明治</td><td>33</td></tr><tr><td>蛋餅</td><td>原味蛋餅</td><td>22</td></tr><tr><td>蛋餅</td><td>培根蛋餅</td><td>33</td></tr><tr><td>蛋餅</td><td>起司蛋餅</td><td>33</td></tr><tr><td>蛋餅</td><td>鮪魚蛋餅</td><td>33</td></tr><tr><td>蛋餅</td><td>火腿蛋餅</td><td>33</td></tr><tr><td>蛋餅</td><td>豬排蛋餅</td><td>38</td></tr><tr><td>蛋餅</td><td>綜合蛋餅</td><td>44</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒王子麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒意麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒王子麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒意麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒王子麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒意麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒王子麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒意麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒王子麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒意麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒王子麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒意麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒王子麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒意麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒王子麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒意麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮菇鍋燒王子麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮菇鍋燒意麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮菇鍋燒王子麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮菇鍋燒意麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒烏龍麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒烏龍麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒烏龍麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒烏龍麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒烏龍麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒烏龍麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒烏龍麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒烏龍麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮菇鍋燒烏龍麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮菇鍋燒烏龍麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒雞絲麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒細冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒寬冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒雞絲麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒細冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>鮮蔬鍋燒寬冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒雞絲麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒細冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒寬冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒雞絲麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒細冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>番茄鍋燒寬冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒雞絲麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒細冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒寬冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒雞絲麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒細冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>泡菜鍋燒寬冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒雞絲麵-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒細冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒寬冬粉-雞肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒雞絲麵-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒細冬粉-豬肉</td><td>77</td></tr><tr><td>鍋燒麵</td><td>沙茶鍋燒寬冬粉-豬肉</td><td>77</td></tr><tr><td>飯類</td><td>滷肉飯</td><td>49</td></tr><tr><td>飯類</td><td>燻雞蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>香腸蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>培根蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>鮪魚蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>火腿蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>肉絲蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>鮭魚蛋炒飯</td><td>77</td></tr><tr><td>飯類</td><td>蝦仁燴飯</td><td>77</td></tr><tr><td>飯類</td><td>雞肉燴飯</td><td>77</td></tr><tr><td>飯類</td><td>豬肉燴飯</td><td>77</td></tr><tr><td>粥類</td><td>海鮮粥</td><td>77</td></tr><tr><td>粥類</td><td>皮蛋瘦肉粥</td><td>77</td></tr><tr><td>便當</td><td>素食便當</td><td>99</td></tr><tr><td>便當</td><td>每日特餐</td><td>69</td></tr><tr><td>便當</td><td>輕食便當-低GI-豬肉</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-秋刀魚</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-紐奧良腿</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-香茅雞腿</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-客家鹹豬</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-雞丁</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-蝦仁烘蛋</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-魚排</td><td>88</td></tr><tr><td>便當</td><td>蔬食便當-雞肉</td><td>88</td></tr><tr><td>果汁</td><td>木瓜牛奶-全奶</td><td>55</td></tr><tr><td>果汁</td><td>半奶</td><td>44</td></tr><tr><td>果汁</td><td>香蕉牛奶-全奶</td><td>55</td></tr><tr><td>果汁</td><td>半奶</td><td>44</td></tr><tr><td>果汁</td><td>草莓牛奶-全奶</td><td>55</td></tr><tr><td>果汁</td><td>半奶</td><td>44</td></tr><tr><td>果汁</td><td>西瓜牛奶-全奶</td><td>55</td></tr><tr><td>果汁</td><td>半奶</td><td>44</td></tr><tr><td>果汁</td><td>西瓜汁</td><td>27</td></tr><tr><td>果汁</td><td>芭樂汁</td><td>38</td></tr><tr><td>果汁</td><td>鳳梨汁</td><td>38</td></tr><tr><td>果汁</td><td>西瓜原汁</td><td>55</td></tr><tr><td>果汁</td><td>綜合果汁</td><td>44</td></tr><tr><td>涼麵（新品）</td><td>蕎麥涼麵(臺式醬)</td><td>77</td></tr><tr><td>涼麵（新品）</td><td>蕎麥涼麵(日式醬)</td><td>77</td></tr><tr><td>涼麵（新品）</td><td>傳統涼麵(油麵)</td><td>66</td></tr><tr><td>麵食類</td><td>手工水餃(僅中午12:00後取餐)</td><td>60</td></tr></table></div><div class="menu-section" id="小熱"><div class="menu-title">小熱菜單</div><table><tr><th>類別</th><th>品項</th><th>價格</th></tr><tr><td>蛋餅</td><td> 原味</td><td>27</td></tr><tr><td>蛋餅</td><td> 玉米</td><td>38</td></tr><tr><td>蛋餅</td><td> 火腿</td><td>38</td></tr><tr><td>蛋餅</td><td> 起司</td><td>38</td></tr><tr><td>蛋餅</td><td> 培根</td><td>38</td></tr><tr><td>蛋餅</td><td> 鮪魚</td><td>44</td></tr><tr><td>蛋餅</td><td> 香雞</td><td>44</td></tr><tr><td>蛋餅</td><td> 燻雞</td><td>44</td></tr><tr><td>蛋餅</td><td> 薯餅</td><td>44</td></tr><tr><td>蛋餅</td><td> 豬肉</td><td>44</td></tr><tr><td>蛋餅</td><td> 豬排</td><td>44</td></tr><tr><td>蛋餅</td><td> 九層塔</td><td>38</td></tr><tr><td>蛋餅</td><td> 高麗菜</td><td>38</td></tr><tr><td>蛋餅</td><td> 西西里雞腿</td><td>60</td></tr><tr><td>蛋餅</td><td> 卡啦雞腿</td><td>55</td></tr><tr><td>蛋餅</td><td> 泡菜</td><td>44</td></tr><tr><td>吐司</td><td>巧克力</td><td>16</td></tr><tr><td>吐司</td><td>草莓</td><td>16</td></tr><tr><td>吐司</td><td>藍莓</td><td>16</td></tr><tr><td>吐司</td><td>花生</td><td>16</td></tr><tr><td>吐司</td><td>椰香奶酥</td><td>16</td></tr><tr><td>吐司</td><td>奶油</td><td>16</td></tr><tr><td>吐司</td><td>葡萄奶酥</td><td>22</td></tr><tr><td>吐司</td><td>抹茶</td><td>22</td></tr><tr><td>吐司</td><td>熱狗捲</td><td>22</td></tr><tr><td>吐司</td><td>檸檬雞柳捲</td><td>27</td></tr><tr><td>吐司</td><td>火腿蛋</td><td>27</td></tr><tr><td>吐司</td><td>肉鬆蛋</td><td>33</td></tr><tr><td>吐司</td><td>起司蛋</td><td>33</td></tr><tr><td>吐司</td><td>培根蛋</td><td>33</td></tr><tr><td>吐司</td><td>漢堡肉</td><td>33</td></tr><tr><td>吐司</td><td>鮪魚蛋</td><td>38</td></tr><tr><td>吐司</td><td>薯餅蛋</td><td>38</td></tr><tr><td>吐司</td><td>豬排蛋</td><td>44</td></tr><tr><td>吐司</td><td>卡拉雞蛋</td><td>55</td></tr><tr><td>吐司</td><td>西西里雞腿蛋</td><td>60</td></tr><tr><td>漢堡</td><td>豬肉</td><td>33</td></tr><tr><td>漢堡</td><td>培根</td><td>33</td></tr><tr><td>漢堡</td><td>熱狗</td><td>33</td></tr><tr><td>漢堡</td><td>火腿</td><td>33</td></tr><tr><td>漢堡</td><td>起司</td><td>33</td></tr><tr><td>漢堡</td><td>香雞</td><td>44</td></tr><tr><td>漢堡</td><td>豬排</td><td>44</td></tr><tr><td>漢堡</td><td>檸檬雞柳</td><td>55</td></tr><tr><td>漢堡</td><td>卡拉雞腿</td><td>55</td></tr><tr><td>漢堡</td><td>西西里雞腿</td><td>60</td></tr><tr><td>抓餅</td><td>蔥抓餅</td><td>22</td></tr><tr><td>抓餅</td><td>蔬菜</td><td>27</td></tr><tr><td>抓餅</td><td>泡菜</td><td>38</td></tr><tr><td>抓餅</td><td>鮪魚</td><td>38</td></tr><tr><td>抓餅</td><td>培根蔬菜</td><td>38</td></tr><tr><td>抓餅</td><td>火腿蔬菜</td><td>38</td></tr><tr><td>抓餅</td><td>玉米蔬菜</td><td>38</td></tr><tr><td>抓餅</td><td>起司蔬菜</td><td>38</td></tr><tr><td>抓餅</td><td>九層塔＋蛋</td><td>44</td></tr><tr><td> 主食</td><td>蘑菇鐵板麵</td><td>38</td></tr><tr><td> 主食</td><td>黑胡椒鐵板麵</td><td>38</td></tr><tr><td> 主食</td><td>紅油抄手／麵</td><td>55</td></tr><tr><td> 主食</td><td>貢丸乾／湯麵</td><td>55</td></tr><tr><td> 主食</td><td>肉燥乾拌麵</td><td>55</td></tr><tr><td> 主食</td><td>豬排乾麵</td><td>55</td></tr><tr><td> 主食</td><td>小綠特餐</td><td>55</td></tr><tr><td> 主食</td><td>餛飩乾／湯麵</td><td>55</td></tr><tr><td> 主食</td><td>沙茶肉片乾／湯麵</td><td>55</td></tr><tr><td> 主食</td><td>排骨乾麵</td><td>82</td></tr><tr><td> 主食</td><td>滑蛋肉片飯</td><td>60</td></tr><tr><td> 主食</td><td>茄汁火腿蛋包飯</td><td>66</td></tr><tr><td> 主食</td><td>泡菜炒飯</td><td>66</td></tr><tr><td> 主食</td><td>水餃*10粒</td><td>55</td></tr><tr><td> 主食</td><td>香煎大鍋貼*5</td><td>27</td></tr><tr><td> 主食</td><td>宮保雞丁麵</td><td>55</td></tr><tr><td> 主食</td><td>番茄義大利麵</td><td>55</td></tr><tr><td> 主食</td><td>白醬義大利麵</td><td>55</td></tr><tr><td> 主食</td><td>番茄湯麵</td><td>55</td></tr><tr><td> 主食</td><td>燙高麗菜</td><td>33</td></tr><tr><td> 主食</td><td>燙青菜</td><td>33</td></tr><tr><td> 主食</td><td>滷雞腿飯</td><td>85</td></tr><tr><td> 主食</td><td>炸雞排飯</td><td>85</td></tr><tr><td> 主食</td><td>黑胡椒雞排飯</td><td>85</td></tr><tr><td> 其他</td><td>小熱狗*2</td><td>16</td></tr><tr><td> 其他</td><td>薯餅*1</td><td>17</td></tr><tr><td> 其他</td><td>蘿蔔糕*1</td><td>17</td></tr><tr><td> 其他</td><td>薯餅*2</td><td>33</td></tr><tr><td> 其他</td><td>蘿蔔糕*2</td><td>33</td></tr><tr><td> 其他</td><td>薯條</td><td>33</td></tr><tr><td> 其他</td><td>甜不辣</td><td>33</td></tr><tr><td> 其他</td><td>薯不辣</td><td>33</td></tr><tr><td> 其他</td><td>麥克雞塊</td><td>33</td></tr><tr><td> 其他</td><td>起司乳酪餅</td><td>33</td></tr><tr><td> 其他</td><td>薯餅+蘿蔔糕</td><td>33</td></tr><tr><td> 其他</td><td>薯蘿蛋</td><td>44</td></tr><tr><td> 其他</td><td>蘿蔔蛋</td><td>44</td></tr><tr><td> 其他</td><td>黃金餃</td><td>38</td></tr><tr><td> 其他</td><td>脆薯</td><td>33</td></tr><tr><td> 其他</td><td>雞米花</td><td>33</td></tr><tr><td> 其他</td><td>花枝丸</td><td>33</td></tr><tr><td> 其他</td><td>芝麻球</td><td>33</td></tr><tr><td> 其他</td><td>馬蹄條</td><td>33</td></tr><tr><td> 其他</td><td>青蔥餅</td><td>27</td></tr><tr><td> 其他</td><td>紅豆餅</td><td>27</td></tr><tr><td> 其他</td><td>卡拉雞腿</td><td>33</td></tr><tr><td> 其他</td><td>西西里雞腿</td><td>38</td></tr><tr><td> 其他</td><td>荷包蛋</td><td>11</td></tr><tr><td> 二區商品</td><td>泡菜捲餅</td><td>38</td></tr><tr><td> 二區商品</td><td>板烤雞肉捲餅</td><td>49</td></tr><tr><td> 二區商品</td><td>煙燻雞肉捲餅</td><td>49</td></tr><tr><td> 二區商品</td><td>起司雞肉捲</td><td>60</td></tr><tr><td> 二區商品</td><td>海鮮披薩</td><td>38</td></tr><tr><td> 二區商品</td><td>夏威夷披薩</td><td>38</td></tr><tr><td> 二區商品</td><td>燻雞披薩</td><td>38</td></tr><tr><td> 二區商品</td><td>總匯披薩</td><td>38</td></tr><tr><td> 二區商品</td><td>巧克力鬆餅</td><td>55</td></tr><tr><td> 二區商品</td><td>蜂蜜鬆餅</td><td>55</td></tr><tr><td> 二區商品</td><td>煉乳鬆餅</td><td>55</td></tr><tr><td> 二區商品</td><td>起司鬆餅</td><td>55</td></tr><tr><td> 二區商品</td><td>蜂蜜巧克力鬆餅</td><td>55</td></tr><tr><td> 二區商品</td><td>煉乳蜂蜜鬆餅</td><td>55</td></tr><tr><td> 二區商品</td><td>泡菜鬆餅</td><td>66</td></tr><tr><td> 二區商品</td><td>起司蔬菜鬆餅</td><td>66</td></tr><tr><td> 二區商品</td><td>燻雞蔬菜鬆餅</td><td>66</td></tr><tr><td> 二區商品</td><td>豬排蔬菜鬆餅</td><td>66</td></tr><tr><td> 附加</td><td>豬肉</td><td>16</td></tr><tr><td> 附加</td><td>豬排</td><td>22</td></tr><tr><td> 附加</td><td>檸檬雞柳</td><td>33</td></tr><tr><td> 附加</td><td>培根</td><td>11</td></tr><tr><td> 附加</td><td>玉米</td><td>11</td></tr><tr><td> 附加</td><td>火腿</td><td>11</td></tr><tr><td> 附加</td><td>起司</td><td>11</td></tr></table></div>
+</body>
+</html>
